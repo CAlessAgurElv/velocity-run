@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre Velocity Run, zapatillas deportivas para correr, entrenar y destacar.">
+    <title>Velocity Run | Corre hacia tu siguiente récord</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#inicio">VELOCITY<span> RUN</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item"><a class="nav-link" href="#running">Running</a></li>
+                <li class="nav-item"><a class="nav-link" href="#entrenamiento">Entrenamiento</a></li>
+                <li class="nav-item"><a class="nav-link" href="#lifestyle">Lifestyle</a></li>
+                <li class="nav-item"><a class="nav-link" href="#especial">Edición especial</a></li>
+                <li class="nav-item ms-lg-3">
+                    <button class="btn btn-outline-light cart-button" data-bs-toggle="modal" data-bs-target="#cartModal">
+                        Carrito (<span id="cart-count">0</span>)
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header id="inicio" class="hero-section">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="hero-slide container">
+                    <div class="hero-copy">
+                        <span class="eyebrow">RENDIMIENTO SIN LÍMITES</span>
+                        <h1>Corre hacia tu <span>siguiente récord.</span></h1>
+                        <p>Conoce Velocity X-Pro, diseñada para llevar cada zancada más lejos.</p>
+                        <h3>L 3,499</h3>
+                        <a href="#running" class="btn btn-velocity">Comprar ahora</a>
+                    </div>
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1000&q=85" alt="Zapatilla deportiva roja">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="hero-slide container">
+                    <div class="hero-copy">
+                        <span class="eyebrow">ENERGÍA EN CADA MOVIMIENTO</span>
+                        <h1>Entrena con <span>otra mentalidad.</span></h1>
+                        <p>Velocity Flex combina comodidad, estabilidad y libertad de movimiento.</p>
+                        <h3>L 2,799</h3>
+                        <a href="#entrenamiento" class="btn btn-velocity">Comprar ahora</a>
+                    </div>
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=1000&q=85" alt="Zapatillas deportivas para entrenamiento">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="hero-slide container">
+                    <div class="hero-copy">
+                        <span class="eyebrow">EDICIÓN LIMITADA</span>
+                        <h1>Corre como <span>los campeones.</span></h1>
+                        <p>Descubre la edición especial inspirada en quienes superan sus propios límites.</p>
+                        <h3>L 4,299</h3>
+                        <a href="#especial" class="btn btn-velocity">Comprar ahora</a>
+                    </div>
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=1000&q=85" alt="Zapatillas deportivas edición especial">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <div class="hero-tagline">Corre como los campeones. Tecnología que impulsa tu siguiente récord.</div>
+</header>
+
+<section class="benefits container py-4">
+    <div class="row g-3 text-center">
+        <div class="col-6 col-lg-3"><div class="benefit"><strong>01</strong><span>Diseño deportivo</span></div></div>
+        <div class="col-6 col-lg-3"><div class="benefit"><strong>02</strong><span>Comodidad diaria</span></div></div>
+        <div class="col-6 col-lg-3"><div class="benefit"><strong>03</strong><span>Estilo y rendimiento</span></div></div>
+        <div class="col-6 col-lg-3"><div class="benefit"><strong>04</strong><span>Modelos exclusivos</span></div></div>
+    </div>
+</section>
+
+<main class="container py-5">
+    <section id="running" class="product-section">
+        <div class="section-heading">
+            <div><span class="eyebrow">SUPERA TU DISTANCIA</span><h2>Running</h2></div>
+            <p>Zapatillas ligeras para acompañarte en cada kilómetro.</p>
+        </div>
+        <div class="row g-4" id="running-products"></div>
+    </section>
+
+    <section id="entrenamiento" class="product-section">
+        <div class="section-heading">
+            <div><span class="eyebrow">FUERZA Y MOVIMIENTO</span><h2>Entrenamiento</h2></div>
+            <p>Estabilidad y soporte para tus sesiones más exigentes.</p>
+        </div>
+        <div class="row g-4" id="training-products"></div>
+    </section>
+
+    <section id="lifestyle" class="product-section">
+        <div class="section-heading">
+            <div><span class="eyebrow">TU ESTILO, TU RITMO</span><h2>Lifestyle</h2></div>
+            <p>Comodidad deportiva para destacar todos los días.</p>
+        </div>
+        <div class="row g-4" id="lifestyle-products"></div>
+    </section>
+
+    <section id="especial" class="product-section">
+        <div class="section-heading">
+            <div><span class="eyebrow">DISEÑOS EXCLUSIVOS</span><h2>Edición especial</h2></div>
+            <p>Modelos de colección inspirados en grandes desafíos.</p>
+        </div>
+        <div class="row g-4" id="special-products"></div>
+    </section>
+</main>
+
+<section class="athlete-section">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <img class="athlete-image" src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=1000&q=85" alt="Corredores entrenando en una pista">
+            </div>
+            <div class="col-lg-6">
+                <span class="eyebrow">INSPIRADOS EN GRANDES METAS</span>
+                <h2>El siguiente récord empieza con un paso.</h2>
+                <blockquote>“Desde que uso las Velocity X-Pro, siento que vuelo en cada zancada. Comodidad, ligereza y potencia en un solo paso.”</blockquote>
+                <h5>Camila Torres</h5>
+                <p class="athlete-role">Campeona Olímpica 800m · Personaje del prototipo</p>
+                <a href="#especial" class="btn btn-velocity">Descubre la edición especial</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="community-section container text-center py-5">
+    <span class="eyebrow">SOMOS VELOCITY</span>
+    <h2>Corre con una comunidad que nunca se detiene.</h2>
+    <p>Únete a los más de 10,000 corredores que confían en Velocity.</p>
+    <div class="social-links">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">TikTok</a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube</a>
+    </div>
+</section>
+
+<section class="newsletter-section">
+    <div class="container">
+        <div class="row align-items-center g-4">
+            <div class="col-lg-6">
+                <span class="eyebrow">SÉ EL PRIMERO EN SABERLO</span>
+                <h2>Tu próxima meta comienza aquí.</h2>
+                <p>Recibe lanzamientos exclusivos y promociones de primera línea.</p>
+            </div>
+            <div class="col-lg-6">
+                <form id="newsletter-form" class="newsletter-form">
+                    <label for="email" class="visually-hidden">Correo electrónico</label>
+                    <input type="email" id="email" class="form-control" placeholder="Tu correo electrónico" required>
+                    <button class="btn btn-velocity" type="submit">Suscribirme</button>
+                </form>
+                <p id="newsletter-message" class="mt-3" aria-live="polite"></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+        <a class="navbar-brand fw-bold" href="#inicio">VELOCITY<span> RUN</span></a>
+        <p>© 2026 Velocity Run · Prototipo académico de landing page</p>
+        <a href="#inicio">Volver arriba ↑</a>
+    </div>
+</footer>
+
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartModalLabel">Tu carrito</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <div id="cart-items"><p class="text-muted">Tu carrito está vacío.</p></div>
+                <hr>
+                <h5 class="text-end">Total: <span id="cart-total">L 0</span></h5>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Seguir explorando</button>
+                <button class="btn btn-velocity" id="checkout-button">Finalizar compra</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
